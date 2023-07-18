@@ -1987,7 +1987,7 @@ int input_read_parameters(
 
 
       class_read_double("k_per_decade_class_sz",ptsz->k_per_decade_for_tSZ);
-      class_read_double("k_min_for_pk_class",ptsz->k_min_for_pk_in_tSZ);
+      class_read_double("k_min_for_pk_class_sz",ptsz->k_min_for_pk_in_tSZ);
       class_read_double("k_max_for_pk_class_sz",ptsz->k_max_for_pk_in_tSZ);
 // for the vrms2 calculation
       class_read_double("k_per_decade_vrms2",ptsz->k_per_decade_for_vrms2);
