@@ -1,17 +1,9 @@
 ==============================================
 CLASS_SZ
 ==============================================
-<<<<<<< HEAD
  Cosmic Linear Anisotropy Solving System with Fast and Accurate CMB, LSS and Halo Model Observables Computations
-=======
- Cosmic Linear Anisotropy Solving System with Fast and Accurate, CMB, LSS and Halo Model Observables Computation
 
-The code has moved. It now lives in its new permanent home at:
->>>>>>> b4934e2f1f7e62ed81f2beee49fbb39c4bb34e11
 
-https://github.com/CLASS-SZ/class_sz
-
-<<<<<<< HEAD
 This code is close to be as fast as it gets, with full parallelization, implementation of high-accuracy cosmopower emulators (see below for some instructions) and Fast Fourier Transforms (including FFTLog).
 
 
@@ -45,13 +37,10 @@ Tutorials
 --------------
 
 
-=======
->>>>>>> b4934e2f1f7e62ed81f2beee49fbb39c4bb34e11
 The tutorial notebooks can be found at:
 
 https://github.com/CLASS-SZ/notebooks
 
-<<<<<<< HEAD
 These notebooks along with the paper (link) constitute the documentation.
 
 
@@ -338,10 +327,3 @@ Support
 -------
 
 To get support on the class_sz module, feel free to open an issue on the GitHub page, we will try to answer as soon as possible.
-=======
-
-Acknowledgments
--------
-
-Thanks to  Juan Macias-Perez, Eiichiro Komatsu, Ryu Makiya, Barabara Comis, Julien Lesgourgues, Jens Chluba, Colin Hill, Florian Ruppin, Thejs Brinckmann, Aditya Rotti, Mathieu Remazeilles, David Alonso, Nick Koukoufilippas, Fiona McCarthy, Eunseong Lee, Ola Kusiak, Simone Ferraro, Mat Madhavacheril, Manu Schaan, Shivam Pandey, Alina Sabyr, Yogesh Meta, Kristen Surrao for help, suggestions and/or running tests with **class_sz** before its moved to its new home.
->>>>>>> b4934e2f1f7e62ed81f2beee49fbb39c4bb34e11

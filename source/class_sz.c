@@ -9435,43 +9435,6 @@ int evaluate_lensing_profile(double kl,
 //
 
 
-<<<<<<< Updated upstream
-=======
-double evaluate_IA(double kl,
-                   double * pvecback,
-                   double * pvectsz,
-                   struct background * pba,
-                   struct tszspectrum * ptsz)
-{
-double result;
-
-double z = pvectsz[ptsz->index_z];
-double chi =  sqrt(pvectsz[ptsz->index_chi2]);
-
-double D = pvecback[pba->index_bg_D];
-// double c1_rhom0 = 0.0134; // see: https://arxiv.org/abs/astro-ph/0009499; https://arxiv.org/pdf/2108.01601.pdf
-double C1 = ptsz->C1_IA;  //5.e-14;
-double c1_rhom0 = C1*ptsz->Omega_m_0*ptsz->Rho_crit_0;
-//printf("%.7e \n",c1_rhom0);
-double z0 = 0.62; // see: https://arxiv.org/abs/astro-ph/0009499; https://arxiv.org/pdf/2108.01601.pdf
-double A_IA = ptsz->A_IA;
-double eta_IA = ptsz->eta_IA;
-
-
-double A_IA_of_z;// = get_A_IA_of_z(z,D,)
-A_IA_of_z =  A_IA*pow((1.+z)/(1.+z0),eta_IA)*c1_rhom0/D;
-
-double nz = get_source_galaxy_number_counts(z,ptsz);
-double dz_dchi = pvecback[pba->index_bg_H]/pba->h;
-
-result = A_IA_of_z*nz/chi/chi*dz_dchi;
-
-return result;
-}
-
-
-
->>>>>>> Stashed changes
 
 double evaluate_pressure_profile(double kl,
                               double * pvecback,
