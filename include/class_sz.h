@@ -1426,6 +1426,12 @@ double szcounts_ntot;
   double Ap;
   int mass_dependent_bias;
 
+<<<<<<< Updated upstream
+=======
+  double A_IA;
+  double eta_IA;
+  double C1_IA;
+>>>>>>> Stashed changes
   //Planck pressure profile
   double P0GNFW;
   double c500;

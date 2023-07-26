@@ -3919,6 +3919,13 @@ int input_read_parameters(
 //       }
 
 
+<<<<<<< Updated upstream
+=======
+class_read_double("A_IA",ptsz->A_IA);
+class_read_double("eta_IA",ptsz->eta_IA);
+class_read_double("C1_IA",ptsz->C1_IA);
+
+>>>>>>> Stashed changes
 
 
     if (ptsz->pressure_profile==0){
@@ -6441,6 +6448,12 @@ int input_default_params(
   // ptsz->alphaGNFW = 1.33;
   // ptsz->betaGNFW = 4.13;
 
+<<<<<<< Updated upstream
+=======
+  ptsz->A_IA = 0.1; // see https://arxiv.org/pdf/2106.08438.pdf
+  ptsz->eta_IA = -0.5; // see https://arxiv.org/pdf/2106.08438.pdf
+  ptsz->C1_IA = 5.e-14; // see https://arxiv.org/pdf/2106.08438.pdf
+>>>>>>> Stashed changes
   //A10 UPP parameters
   ptsz->P0GNFW = 8.130;
   ptsz->c500 = 1.156;
