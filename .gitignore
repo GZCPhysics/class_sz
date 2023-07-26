@@ -1,19 +1,18 @@
-output/
 *~
+<<<<<<< HEAD
 build/
 class_sz
+=======
+>>>>>>> b4934e2f1f7e62ed81f2beee49fbb39c4bb34e11
 *.prof
 libclass.a
-*out
-python/classy.c
-python/classy_szfast/classy_szfast/.ipynb*
-python/classy_szfast/classy_szfast/__pycache__
 *egg-info
 *.pyc
 python/build/
 *.dSYM
 RealSpaceInterface/cache/
 .DS_Store
+<<<<<<< HEAD
 doc/manual/html
 doc/manual/latex
 class_sz_auxiliary_files/SO_files/*
@@ -268,3 +267,5 @@ class_sz_auxiliary_files/class_uha_6may23_edeppaper_lcdmbf_pkl.pickle
 pt_matrices/*
 class_sz_auxiliary_files/*pickle
 class_sz_test_yphi.ini
+=======
+>>>>>>> b4934e2f1f7e62ed81f2beee49fbb39c4bb34e11
