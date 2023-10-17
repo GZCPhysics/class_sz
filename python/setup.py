@@ -39,14 +39,15 @@ with open(os.path.join(include_folder, 'common.h'), 'r') as v_file:
 # Define cython extension and fix Python version
 classy_ext = Extension("classy_sz", [os.path.join(classy_folder, "classy.pyx")],
                            #include_dirs=[nm.get_include(), include_folder,'/Users/boris/gsl-2.6/include'],
-                           include_dirs=[nm.get_include(), include_folder],
+                           include_dirs=[nm.get_include(), include_folder,'/Users/cheng/anaconda3/envs/py11/include/gsl/'],
                            libraries=liblist,
                            library_dirs=[root_folder, GCCPATH],
                            #extra_link_args=['-lgomp','-Wl,-rpath,/usr/local/opt/gcc/lib/gcc/10/','-L/Users/boris/gsl-2.6/lib/','-lgsl','-lgslcblas'])
                            #extra_link_args=['-lgomp','-L/Users/boris/gsl-2.6/lib/','-lgsl','-lgslcblas','-Wl,-rpath,/usr/local/opt/gcc/lib/gcc/10/'])
                            # extra_link_args=['-lgomp','-lgsl','-lfftw3','-lgslcblas','-Wl,-rpath,/usr/local/opt/gcc/lib/gcc/11/']) # BB
                            # extra_link_args=['-lomp','-L/Users/boris/miniconda/lib','-lgsl','-lfftw3','-lgslcblas']) # BB
-                           extra_link_args=['-lgomp','-L/Users/boris/opt/miniconda3/lib','-lgsl','-lfftw3','-lgslcblas']) # BB
+                           extra_link_args=['-lgomp','-L/Users/cheng/anaconda3/envs/py11/lib','-lgsl','-lfftw3','-lgslcblas']
+                           ) # BB
                            # extra_link_args=['-lomp','-L/Users/boris/opt/anaconda3/lib','-lgsl','-lfftw3','-lgslcblas']) # BB
 
                            #extra_link_args=['-lgomp','-lgsl','-lfftw3_omp','-lfftw3','-lgslcblas','-Wl,-rpath,/usr/local/opt/gcc/lib/gcc/11/']) # BB

@@ -94,7 +94,7 @@ void fht(int N, const double r[], const double complex a[], double k[], double c
 
 // printf("fftlog coefficients computed.\n");
 
-    int id = omp_get_thread_num();
+    // int id = omp_get_thread_num();
     // omp_set_lock(lock); //Only a single thread writes
     // printf("My Thread num in fht is: %d\n", id);
     /* Compute the convolution b = a*u using FFTs */
